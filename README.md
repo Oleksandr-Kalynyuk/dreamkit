@@ -1,36 +1,189 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✦ DreamKit
 
-## Getting Started
+### Beautiful animated UI components for modern websites.
 
-First, run the development server:
+DreamKit is an open-source collection of animated and interactive UI components built for modern web projects.
+
+**Copy. Paste. Customize. Ship.**
+
+No complicated setup. No unnecessary dependencies. Just beautiful components you can use in your projects.
+
+---
+
+## ✨ What is DreamKit?
+
+DreamKit is a growing collection of reusable UI components designed for developers who want to build modern, interactive and visually impressive websites without creating every animation from scratch.
+
+The library currently includes components for:
+
+* 🎨 Backgrounds
+* 🔘 Buttons
+* 🃏 Cards
+* 🖱️ Cursor effects
+* 🦸 Hero sections
+* ⏳ Loaders
+* 📊 Progress components
+* and more
+
+New components are being added continuously.
+
+---
+
+## 🚀 Live Demo
+
+Explore the components directly in the browser:
+
+**Live Demo coming soon.**
+
+You can preview components, interact with them and copy the code directly into your project.
+
+---
+
+## 🧩 Components
+
+### Backgrounds
+
+* Animated Grid Background
+* Dot Pattern Background
+
+### Buttons
+
+* Glow Pulse Button
+* Interactive Slide Button
+* Shimmer Border Button
+
+### Cards
+
+* Glow Card
+* Metric Card
+
+### Cursor
+
+* Fluid Glow Cursor
+* Interactive Ring Cursor
+
+### Hero
+
+* Split Hero
+
+### Loaders
+
+* Orbit Spinner Loader
+* Pulse Bar Loader
+
+> DreamKit is actively evolving. More components and categories are coming.
+
+---
+
+## 🛠️ Tech Stack
+
+DreamKit is built with:
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* CSS Animations
+
+---
+
+## 📦 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Oleksandr-Kalynyuk/dreamkit.git
+```
+
+Navigate into the project:
+
+```bash
+cd dreamkit
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 💡 Using Components
 
-To learn more about Next.js, take a look at the following resources:
+Choose a component from the DreamKit website and copy its source code into your project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Customize it to fit your design, animation and project requirements.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+DreamKit is designed to be simple:
 
-## Deploy on Vercel
+**Find → Copy → Customize → Ship.**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+Contributions, ideas and feedback are welcome.
+
+If you have an idea for a component or animation that would fit DreamKit, feel free to open an issue or submit a pull request.
+
+---
+
+## ❤️ Support the Project
+
+DreamKit is free and open source.
+
+If you find it useful and want to support its development, you will be able to support the project on Ko-fi.
+
+**Ko-fi support link coming soon.**
+
+Every bit of support helps me spend more time improving the library and creating new components.
+
+---
+
+## 🗺️ Roadmap
+
+DreamKit is actively being developed.
+
+Planned features include:
+
+* More animated UI components
+* More hero sections
+* More interactive backgrounds
+* Advanced cursor effects
+* More complete website sections
+* Templates
+* Component search and filtering improvements
+* Premium components
+* DreamKit Pro
+* User accounts and subscriptions
+
+---
+
+## ⭐ Support DreamKit
+
+If you like the project:
+
+⭐ Star the repository
+🐛 Report bugs
+💡 Suggest components
+🤝 Contribute
+☕ Support the project on Ko-fi when available
+
+Every star helps more developers discover DreamKit.
+
+---
+
+Built with ❤️ for the web.
