@@ -73,7 +73,7 @@ export default function MainHero() {
 
                 <span className="h-3 w-px bg-white/10" />
 
-                <span>12+ free components</span>
+                <span>10+ free components</span>
 
                 <ArrowRight className="h-3.5 w-3.5 text-zinc-600 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:text-amber-300" />
               </Link>
@@ -126,7 +126,7 @@ export default function MainHero() {
               </Link>
 
               <a
-                href="https://github.com/your-username/dreamkit-ui"
+                href="https://github.com/Oleksandr-Kalynyuk/dreamkit"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-xl border border-white/[0.1] bg-white/[0.025] px-6 text-sm font-medium text-zinc-200 transition-all duration-300 hover:border-white/[0.18] hover:bg-white/[0.05]"
