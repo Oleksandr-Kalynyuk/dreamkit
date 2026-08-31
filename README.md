@@ -87,37 +87,32 @@ DreamKit is built with:
 
 ---
 
-## 📦 Getting Started
+## 🚀 Get Started
 
-Clone the repository:
+The easiest way to use DreamKit is through the official website.
 
-```bash
-git clone https://github.com/Oleksandr-Kalynyuk/dreamkit.git
-```
+**→ Visit DreamKit**
 
-Navigate into the project:
+Browse the component library, preview components live, and copy the code you need directly into your project.
 
-```bash
-cd dreamkit
-```
+### How it works
 
-Install dependencies:
+**1. Explore**
+Find a component you like on the DreamKit website.
 
-```bash
-npm install
-```
+**2. Preview**
+See how it looks and interacts in real time.
 
-Start the development server:
+**3. Copy**
+Copy the component source directly from the component page.
 
-```bash
-npm run dev
-```
+**4. Customize**
+Adapt the component to your project and make it your own.
 
-Open:
+**5. Ship**
+Drop it into your project and build something great.
 
-```text
-http://localhost:3000
-```
+> No need to clone the entire DreamKit repository.
 
 ---
 
