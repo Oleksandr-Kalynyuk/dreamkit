@@ -27,9 +27,8 @@ export async function GET(request: Request) {
 
     // Додаємо контакт у Resend Audiences тільки після підтвердження
     await resend.contacts.create({
-      email: email.trim().toLowerCase(),
-      audienceId: process.env.RESEND_AUDIENCE_ID!,
-      unsubscribed: false,
+    email: email.trim().toLowerCase(),
+    unsubscribed: false,
     });
 
     // Редірект на головну або окрему сторінку про успішне підтвердження
