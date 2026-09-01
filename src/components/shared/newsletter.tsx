@@ -59,7 +59,7 @@ export default function Newsletter() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="relative overflow-hidden rounded-2xl border border-white/10 bg-neutral-950/80 px-5 py-12 text-center backdrop-blur-md sm:px-10 sm:py-16"
         >
-          {/* Ambient Amber Glow (DreamKit Style) */}
+          {/* Ambient Amber Glow */}
           <div className="pointer-events-none absolute inset-0">
             <div className="absolute left-1/2 top-0 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber-500/10 blur-3xl" />
           </div>
@@ -76,7 +76,7 @@ export default function Newsletter() {
               <span>✦</span> Stay in the loop
             </motion.div>
 
-            {/* Title with DreamKit Yellow Accent */}
+            {/* Title */}
             <motion.h2
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ export default function Newsletter() {
                 aria-hidden="true"
               />
 
-              {/* Improved Input with higher height & text-base for mobile touch */}
+              {/* Fixed Input Height with h-12 */}
               <input
                 type="email"
                 value={email}
@@ -125,7 +125,7 @@ export default function Newsletter() {
                 placeholder="you@example.com"
                 disabled={status === "loading"}
                 aria-label="Email address"
-                className="h-13 sm:h-12 w-full flex-1 rounded-xl border border-white/10 bg-neutral-900/90 px-4 text-base sm:text-sm text-white outline-none placeholder:text-neutral-500 transition focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/30 disabled:cursor-not-allowed disabled:opacity-50"
+                className="h-12 w-full flex-1 rounded-xl border border-white/10 bg-neutral-900/90 px-4 text-base sm:text-sm text-white outline-none placeholder:text-neutral-500 transition focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/30 disabled:cursor-not-allowed disabled:opacity-50"
               />
 
               <motion.button
@@ -133,7 +133,7 @@ export default function Newsletter() {
                 disabled={status === "loading"}
                 whileHover={{ scale: 1.01 }}
                 whileTap={{ scale: 0.98 }}
-                className="h-13 sm:h-12 w-full sm:w-auto shrink-0 rounded-xl bg-white px-6 text-sm font-semibold text-black transition hover:bg-neutral-200 disabled:cursor-not-allowed disabled:opacity-50"
+                className="h-12 w-full sm:w-auto shrink-0 rounded-xl bg-white px-6 text-sm font-semibold text-black transition hover:bg-neutral-200 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {status === "loading" ? "Joining..." : "Notify me →"}
               </motion.button>
