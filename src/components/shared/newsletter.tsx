@@ -39,7 +39,7 @@ export default function Newsletter() {
       }
 
       setStatus("success");
-      setMessage(data.message || "You're on the list!");
+      setMessage(data.message || "Check your inbox to confirm your email!");
       setEmail("");
     } catch (error) {
       setStatus("error");
@@ -50,30 +50,33 @@ export default function Newsletter() {
   }
 
   return (
-    <section className="relative overflow-hidden px-6 py-24">
+    <section className="relative overflow-hidden px-4 py-20 sm:px-6 sm:py-24">
       <div className="mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-14 text-center backdrop-blur-sm sm:px-10"
+          className="relative overflow-hidden rounded-2xl border border-white/10 bg-neutral-950/80 px-5 py-12 text-center backdrop-blur-md sm:px-10 sm:py-16"
         >
+          {/* Ambient Amber Glow (DreamKit Style) */}
           <div className="pointer-events-none absolute inset-0">
-            <div className="absolute left-1/2 top-0 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/[0.06] blur-3xl" />
+            <div className="absolute left-1/2 top-0 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber-500/10 blur-3xl" />
           </div>
 
           <div className="relative z-10 mx-auto max-w-2xl">
+            {/* DreamKit Badge */}
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1, duration: 0.5 }}
-              className="mb-4 text-sm font-medium text-white/50"
+              className="mb-6 inline-flex items-center gap-1.5 rounded-full border border-amber-500/20 bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-400"
             >
-              ✦ Stay in the loop
+              <span>✦</span> Stay in the loop
             </motion.div>
 
+            {/* Title with DreamKit Yellow Accent */}
             <motion.h2
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -81,7 +84,7 @@ export default function Newsletter() {
               transition={{ delay: 0.15, duration: 0.5 }}
               className="text-3xl font-semibold tracking-tight text-white sm:text-4xl"
             >
-              Be the first to know.
+              Be the first to <span className="text-amber-400 italic">know.</span>
             </motion.h2>
 
             <motion.p
@@ -89,7 +92,7 @@ export default function Newsletter() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="mx-auto mt-4 max-w-xl text-sm leading-6 text-white/50 sm:text-base"
+              className="mx-auto mt-4 max-w-xl text-sm leading-6 text-neutral-400 sm:text-base"
             >
               Get notified about new components, major updates, and the launch of DreamKit Pro.
             </motion.p>
@@ -100,7 +103,7 @@ export default function Newsletter() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.25, duration: 0.5 }}
-              className="mx-auto mt-8 flex max-w-xl flex-col gap-3 sm:flex-row"
+              className="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:max-w-xl sm:flex-row"
             >
               {/* Invisible Honeypot Field */}
               <input
@@ -114,6 +117,7 @@ export default function Newsletter() {
                 aria-hidden="true"
               />
 
+              {/* Improved Input with higher height & text-base for mobile touch */}
               <input
                 type="email"
                 value={email}
@@ -121,15 +125,15 @@ export default function Newsletter() {
                 placeholder="you@example.com"
                 disabled={status === "loading"}
                 aria-label="Email address"
-                className="h-12 flex-1 rounded-xl border border-white/10 bg-black/20 px-4 text-sm text-white outline-none placeholder:text-white/30 transition focus:border-white/20 focus:bg-white/[0.04] disabled:cursor-not-allowed disabled:opacity-50"
+                className="h-13 sm:h-12 w-full flex-1 rounded-xl border border-white/10 bg-neutral-900/90 px-4 text-base sm:text-sm text-white outline-none placeholder:text-neutral-500 transition focus:border-amber-500/50 focus:ring-1 focus:ring-amber-500/30 disabled:cursor-not-allowed disabled:opacity-50"
               />
 
               <motion.button
                 type="submit"
                 disabled={status === "loading"}
-                whileHover={{ y: -1 }}
+                whileHover={{ scale: 1.01 }}
                 whileTap={{ scale: 0.98 }}
-                className="h-12 rounded-xl bg-white px-6 text-sm font-medium text-black transition hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-50"
+                className="h-13 sm:h-12 w-full sm:w-auto shrink-0 rounded-xl bg-white px-6 text-sm font-semibold text-black transition hover:bg-neutral-200 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {status === "loading" ? "Joining..." : "Notify me →"}
               </motion.button>
@@ -143,8 +147,8 @@ export default function Newsletter() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -6 }}
                   transition={{ duration: 0.25 }}
-                  className={`mt-4 text-xs ${
-                    status === "error" ? "text-red-400" : "text-emerald-400"
+                  className={`mt-4 text-xs font-medium ${
+                    status === "error" ? "text-red-400" : "text-amber-400"
                   }`}
                 >
                   {message}
@@ -157,7 +161,7 @@ export default function Newsletter() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.35, duration: 0.5 }}
-              className="mt-5 text-xs text-white/30"
+              className="mt-5 text-xs text-neutral-500"
             >
               No spam. Only important DreamKit updates.
             </motion.p>
