@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 // Simple in-memory rate limiting (max 5 requests per 15 minutes per IP)
 const rateLimitMap = new Map<string, { count: number; lastReset: number }>();
 
@@ -59,6 +57,9 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+
+    // Initialize Resend inside handler to prevent build-time errors
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     // 4. Create contact in Resend
     const { data, error } = await resend.contacts.create({
