@@ -46,7 +46,7 @@ export function FAQ() {
       <div className="relative mx-auto max-w-5xl">
         <div className="grid gap-12 lg:grid-cols-[0.72fr_1.28fr] lg:gap-20">
           <div>
-            <SectionLabel index="03">FAQ</SectionLabel>
+            <SectionLabel index="04">FAQ</SectionLabel>
 
             <h2 className="mt-4 max-w-md text-3xl font-semibold tracking-[-0.035em] sm:text-4xl">
               Everything you actually need to know.
