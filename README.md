@@ -190,6 +190,8 @@ If you have an idea for a component, animation or improvement that would fit Dre
 - Report a bug
 - Submit a pull request
 
+On this email - dreamkitsupport@gmail.com
+
 DreamKit is being built in public and community feedback is always appreciated.
 
 ---
