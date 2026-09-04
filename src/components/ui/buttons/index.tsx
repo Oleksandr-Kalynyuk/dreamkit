@@ -17,6 +17,11 @@ import {
   interactiveSlideButtonCode,
 } from "./interactive-slide-button";
 
+import {
+  MagneticGlowButton,
+  magneticGlowButtonCode,
+} from "./magnetic-glow-button";
+
 export default function ButtonsShowcase() {
   return (
     <div className="space-y-6">
@@ -39,6 +44,13 @@ export default function ButtonsShowcase() {
         code={interactiveSlideButtonCode}
       >
         <InteractiveSlideButton />
+      </ComponentViewer>
+
+      <ComponentViewer
+        title="Magnetic Glow Button"
+        code={magneticGlowButtonCode}
+      >
+        <MagneticGlowButton />
       </ComponentViewer>
     </div>
   );

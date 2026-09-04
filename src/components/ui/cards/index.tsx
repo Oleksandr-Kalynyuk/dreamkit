@@ -3,6 +3,10 @@
 import { ComponentViewer } from "@/components/shared/component-viewer";
 import { GlowCard, glowCardCode } from "./glow-card";
 import { MetricStatCard, metricStatCardCode } from "./metric-card";
+import {
+  GlowMetricCard,
+  glowMetricCardCode,
+} from "./glow-metric-card";
 
 export default function CardsShowcase() {
   return (
@@ -13,6 +17,13 @@ export default function CardsShowcase() {
 
       <ComponentViewer title="Bento Metric Card" code={metricStatCardCode}>
         <MetricStatCard />
+      </ComponentViewer>
+
+      <ComponentViewer
+        title="Glow Metric Card"
+        code={glowMetricCardCode}
+      >
+        <GlowMetricCard />
       </ComponentViewer>
     </div>
   );
